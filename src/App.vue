@@ -30,6 +30,7 @@ export default {
   },
   created() {
     this.$http.get('/api/seller?id='+ this.seller.id).then((response) => {
+      console.log(response)
       response = response.body;
       if (response.errno === ERR_OK) {
         this.seller = Object.assign({}, this.seller, response.data);

@@ -5,6 +5,7 @@ import App from './App';
 import router from './router';
 import VueResourse from 'vue-resource';
 import 'common/stylus/index.styl';
+import vConsole from 'common/js/vconsole';
 Vue.config.productionTip = false;
 
 Vue.use(VueResourse);
