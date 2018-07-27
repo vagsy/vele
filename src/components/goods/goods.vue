@@ -105,10 +105,9 @@ export default{
       if (!event._constructed) {
         return;
       }
-      let foodList = this.$refs.foodsWrapper.getElementsByClassName('food-list-hook');
+      let foodList = this.$refs.foodList;
       let el = foodList[index];
       this.foodsScroll.scrollToElement(el, 300);
-      console.log(index);
     },
     selectFood(food, event) {
       if (!event._constructed) {
